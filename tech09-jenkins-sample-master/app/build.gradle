@@ -1,0 +1,81 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.deploygate:gradle:0.6.2'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'findbugs'
+apply plugin: 'deploygate'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "io.github.shoma2da.android_jenkins_sample"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            def configFile = file("signingconfig.properties")
+            def props = new Properties()
+            props.load(new FileInputStream(configFile))
+
+            storeFile file("sample.keystore")
+            storePassword props.storePassword
+            keyAlias props.keyAlias
+            keyPassword props.keyPassword
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:design:23.0.1'
+}
+
+task findbugs(type:FindBugs, dependsOn:assembleDebug) {
+    ignoreFailures = true
+    effort = "max"
+    reportLevel = "medium"
+    excludeFilter = new File("config/findbugs/filter.xml")
+    classes = files("build/intermediates/classes/")
+    source 'src/main'
+    include '**/*.java'
+    reports {
+        xml.enabled = true
+        html.enabled = false
+    }
+    classpath = files()
+}
+
+deploygate {
+    userName = "shoma2da"
+    token = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+    apks {
+        debug {
+            sourceFile = file("build/outputs/apk/app-debug.apk")
+        }
+    }
+}
+
