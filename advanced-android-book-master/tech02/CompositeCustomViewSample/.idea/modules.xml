@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CompositeCustomViewSample.iml" filepath="$PROJECT_DIR$/CompositeCustomViewSample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CompositeCustomViewSample.iml" filepath="$PROJECT_DIR$/.idea/CompositeCustomViewSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CompositeCustomViewSample.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CompositeCustomViewSample.app.iml" />
     </modules>
   </component>
 </project>
