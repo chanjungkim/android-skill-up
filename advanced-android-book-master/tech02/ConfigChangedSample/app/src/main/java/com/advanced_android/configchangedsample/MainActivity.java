@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
     private String mText;
     private EditText mEditText;
     private TextView mSavedText;
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mEditText = (EditText) findViewById(R.id.edit_text);
-        mSavedText = (TextView) findViewById(R.id.text);
+        mSavedText = (TextView) findViewById(R. id.text);
         findViewById(R.id.btn).setOnClickListener(this);
     }
 

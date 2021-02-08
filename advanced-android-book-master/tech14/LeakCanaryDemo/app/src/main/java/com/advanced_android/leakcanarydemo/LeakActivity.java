@@ -7,9 +7,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class LeakActivity extends AppCompatActivity {
-
     static View.OnClickListener sListener = new View.OnClickListener() {
-
         private Button prevClickedView;
 
         @Override
@@ -28,5 +26,4 @@ public class LeakActivity extends AppCompatActivity {
         findViewById(R.id.button1).setOnClickListener(sListener);
         findViewById(R.id.button2).setOnClickListener(sListener);
     }
-
 }
