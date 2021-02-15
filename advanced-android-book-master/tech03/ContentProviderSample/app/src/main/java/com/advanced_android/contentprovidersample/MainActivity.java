@@ -16,7 +16,6 @@ import java.util.Calendar;
 import static android.provider.MediaStore.Images.ImageColumns;
 import static android.provider.MediaStore.Images.Media;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
