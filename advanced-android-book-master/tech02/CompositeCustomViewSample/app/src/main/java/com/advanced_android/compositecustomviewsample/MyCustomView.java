@@ -10,16 +10,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class MyCustomView extends LinearLayout {
-    private ImageView mStar1;
-    private ImageView mStar2;
-    private ImageView mStar3;
-    private int mSelected = 0;
+    private ImageView iv1;
+    private ImageView iv2;
+    private ImageView iv3;
+    private int isClicked = 0;
 
     public MyCustomView(Context context) {
         super(context);
         initializeViews(context, null);
     }
-
 
     public MyCustomView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -56,9 +55,9 @@ public class MyCustomView extends LinearLayout {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        mStar1 = (ImageView) findViewById(R.id.star1);
-        mStar2 = (ImageView) findViewById(R.id.star2);
-        mStar3 = (ImageView) findViewById(R.id.star3);
+        iv1 = (ImageView) findViewById(R.id.star1);
+        iv2 = (ImageView) findViewById(R.id.star2);
+        iv3 = (ImageView) findViewById(R.id.star3);
         // 처음에만 xml로부터의 지정을 반영시키고자 두 번째 인수인 force를 true로 한다
         setSelected(mSelected, true);
     }
