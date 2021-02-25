@@ -24,8 +24,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.example.android.guesstheword.R
 import com.example.android.guesstheword.databinding.GameFragmentBinding
 
@@ -54,8 +56,29 @@ class GameFragment : Fragment() {
         binding.skipButton.setOnClickListener { onSkip() }
         binding.endGameButton.setOnClickListener { onEndGame() }
 
-        updateScoreText()
-        updateWordText()
+        /**
+         * Attach an Observer object to the LiveData.
+         *
+         * Why use viewLifecycleOwner?
+         * Fragment views get destroyed when a user navigates away from a fragment, even though the fragment itself is not destroyed. This essentially creates two lifecycles, the lifecycle of the fragment, and the lifecycle of the fragment's view. Referring to the fragment's lifecycle instead of the fragment view's lifecycle can cause subtle bugs when updating the fragment's view. Therefore, when setting up observers that affect the fragment's view you should:
+         * 1. Set up the observers in onCreateView()
+         * 2. Pass in viewLifecycleOwner to observers
+         *
+         */
+        viewModel.score.observe(viewLifecycleOwner, Observer {newScore ->
+            binding.scoreText.text = newScore.toString()
+        })
+
+        viewModel.word.observe(viewLifecycleOwner, Observer { newWord ->
+            binding.wordText.text = newWord
+        })
+
+        viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer<Boolean>{
+            if(it) gameFinished()
+        })
+
+//        updateScoreText()
+//        updateWordTextve
         return binding.root
     }
 
@@ -63,16 +86,16 @@ class GameFragment : Fragment() {
 //        score--
 //        nextWord()
         viewModel.onSkip()
-        updateScoreText()
-        updateWordText()
+//        updateScoreText()
+//        updateWordText()
     }
 
     private fun onCorrect() {
 //        score++
 //        nextWord()
         viewModel.onCorrect()
-        updateScoreText()
-        updateWordText()
+//        updateScoreText()
+//        updateWordText()
     }
 
     private fun onEndGame(){
@@ -82,16 +105,18 @@ class GameFragment : Fragment() {
     private fun gameFinished(){
         Toast.makeText(activity, "Game has just finished", Toast.LENGTH_SHORT).show()
         val action = GameFragmentDirections.actionGameToScore()
-        action.score = viewModel.score
-        NavHostFragment.findNavController(this).navigate(action)
+        action.score = viewModel.score.value?:0
+        findNavController().navigate(action)
+        viewModel.onGameFinishComplete()
+//        NavHostFragment.findNavController(this).navigate(action)
     }
 
     /** Methods for updating the UI **/
     private fun updateWordText() {
-        binding.wordText.text = viewModel.word
+        binding.wordText.text = viewModel.word.value
     }
 
     private fun updateScoreText() {
-        binding.scoreText.text = viewModel.score.toString()
+        binding.scoreText.text = viewModel.score.value.toString()
     }
 }
