@@ -16,8 +16,8 @@
 
 package com.example.android.sunshine.ui.list;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
 
 import com.example.android.sunshine.data.SunshineRepository;
 import com.example.android.sunshine.data.database.ListWeatherEntry;
@@ -40,6 +40,4 @@ class MainActivityViewModel extends ViewModel {
     public LiveData<List<ListWeatherEntry>> getForecast() {
         return mForecast;
     }
-
-
 }
