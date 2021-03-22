@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_9">9dp</dimen>
+    <dimen name="space_18">18dp</dimen>
+
+    <item name="dialog_min_width_major" type="dimen">95%</item>
+    <item name="dialog_min_width_minor" type="dimen">95%</item>
+
+
+    <dimen name="spacing_25">1dp</dimen>
+    <dimen name="spacing_50">2dp</dimen>
+    <dimen name="spacing_75">3dp</dimen>
+    <dimen name="spacing_100">4dp</dimen>
+    <dimen name="spacing_125">5dp</dimen>
+    <dimen name="spacing_150">6dp</dimen>
+    <dimen name="spacing_200">8dp</dimen>
+    <dimen name="spacing_225">9dp</dimen>
+    <dimen name="spacing_250">10dp</dimen>
+    <dimen name="spacing_275">11dp</dimen>
+    <dimen name="spacing_300">12dp</dimen>
+    <dimen name="spacing_350">14dp</dimen>
+    <dimen name="spacing_375">15dp</dimen>
+    <dimen name="spacing_400">16dp</dimen>
+    <dimen name="spacing_450">18dp</dimen>
+    <dimen name="spacing_500">20dp</dimen>
+    <dimen name="spacing_525">21dp</dimen>
+    <dimen name="spacing_550">22dp</dimen>
+    <dimen name="spacing_600">24dp</dimen>
+    <dimen name="spacing_625">26dp</dimen>
+    <dimen name="spacing_650">28dp</dimen>
+    <dimen name="spacing_675">30dp</dimen>
+    <dimen name="spacing_700">32dp</dimen>
+    <dimen name="spacing_750">36dp</dimen>
+    <dimen name="spacing_775">40dp</dimen>
+    <dimen name="spacing_800">42dp</dimen>
+    <dimen name="spacing_900">48dp</dimen>
+    <dimen name="spacing_950">52dp</dimen>
+    <dimen name="spacing_1000">56dp</dimen>
+    <dimen name="spacing_1050">60dp</dimen>
+    <dimen name="spacing_1100">64dp</dimen>
+    <dimen name="spacing_1200">72dp</dimen>
+    <dimen name="spacing_1300">80dp</dimen>
+    <dimen name="spacing_1400">100dp</dimen>
+    <dimen name="spacing_1500">120dp</dimen>
+
+    <dimen name="font_100">8sp</dimen>
+    <dimen name="font_150">10sp</dimen>
+    <dimen name="font_200">12sp</dimen>
+    <dimen name="font_225">13sp</dimen>
+    <dimen name="font_250">14sp</dimen>
+    <dimen name="font_300">16sp</dimen>
+    <dimen name="font_400">18sp</dimen>
+    <dimen name="font_450">19sp</dimen>
+    <dimen name="font_500">20sp</dimen>
+    <dimen name="font_550">22sp</dimen>
+    <dimen name="font_600">24sp</dimen>
+    <dimen name="font_650">26sp</dimen>
+    <dimen name="font_700">28sp</dimen>
+    <dimen name="font_750">30sp</dimen>
+    <dimen name="font_800">34sp</dimen>
+    <dimen name="font_900">40sp</dimen>
+
+    <dimen name="owner_avatar_width">54dp</dimen>
+
+
+    <!-- region motion layout -->
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- endregion -->
+
+    <!-- region merge adapter -->
+    <dimen name="row_item_margin_vertical">12dp</dimen>
+    <dimen name="row_item_margin_horizontal">12dp</dimen>
+    <dimen name="repo_name_size">24sp</dimen>
+    <dimen name="repo_description_size">16sp</dimen>
+    <dimen name="repo_icon_size">24dp</dimen>
+    <dimen name="loading_progress_bar_size">36dp</dimen>
+    <dimen name="placeholder_item_height">32dp</dimen>
+    <dimen name="error_text_size">24sp</dimen>
+    <!-- endregion -->
+
+
+    <!-- region RecyclerViewActivity 에서 사용 -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+
+    <!--text sizes-->
+    <dimen name="text_size_9">9sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <!-- endregion -->
+
+    <dimen name="recycler_section_header_height">20dp</dimen>
+</resources>

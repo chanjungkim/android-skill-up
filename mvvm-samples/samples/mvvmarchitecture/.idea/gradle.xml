@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/blue_print" />
+            <option value="$PROJECT_DIR$/check_language" />
+            <option value="$PROJECT_DIR$/custom_view" />
+            <option value="$PROJECT_DIR$/deeplinking" />
+            <option value="$PROJECT_DIR$/drag_and_drop" />
+            <option value="$PROJECT_DIR$/extensions" />
+            <option value="$PROJECT_DIR$/modalbottomsheet" />
+            <option value="$PROJECT_DIR$/module_network" />
+            <option value="$PROJECT_DIR$/mvvmarchitecture" />
+            <option value="$PROJECT_DIR$/permission" />
+            <option value="$PROJECT_DIR$/rv_bounce_effect" />
+            <option value="$PROJECT_DIR$/rv_drag_to_reorder" />
+            <option value="$PROJECT_DIR$/rv_motion_layout" />
+            <option value="$PROJECT_DIR$/rv_restoring_scroll_position" />
+            <option value="$PROJECT_DIR$/timer" />
+            <option value="$PROJECT_DIR$/touchevent" />
+            <option value="$PROJECT_DIR$/vp2_sample" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

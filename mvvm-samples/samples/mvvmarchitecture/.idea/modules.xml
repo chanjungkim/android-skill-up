@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Memo.iml" filepath="$PROJECT_DIR$/.idea/modules/Memo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Memo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Memo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/blue_print/Memo.blue_print.iml" filepath="$PROJECT_DIR$/.idea/modules/blue_print/Memo.blue_print.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/check_language/Memo.check_language.iml" filepath="$PROJECT_DIR$/.idea/modules/check_language/Memo.check_language.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom_view/Memo.custom_view.iml" filepath="$PROJECT_DIR$/.idea/modules/custom_view/Memo.custom_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/deeplinking/Memo.deeplinking.iml" filepath="$PROJECT_DIR$/.idea/modules/deeplinking/Memo.deeplinking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drag_and_drop/Memo.drag_and_drop.iml" filepath="$PROJECT_DIR$/.idea/modules/drag_and_drop/Memo.drag_and_drop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extensions/Memo.extensions.iml" filepath="$PROJECT_DIR$/.idea/modules/extensions/Memo.extensions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modalbottomsheet/Memo.modalbottomsheet.iml" filepath="$PROJECT_DIR$/.idea/modules/modalbottomsheet/Memo.modalbottomsheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_network/Memo.module_network.iml" filepath="$PROJECT_DIR$/.idea/modules/module_network/Memo.module_network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvvmarchitecture/Memo.mvvmarchitecture.iml" filepath="$PROJECT_DIR$/.idea/modules/mvvmarchitecture/Memo.mvvmarchitecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/permission/Memo.permission.iml" filepath="$PROJECT_DIR$/.idea/modules/permission/Memo.permission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rv_bounce_effect/Memo.rv_bounce_effect.iml" filepath="$PROJECT_DIR$/.idea/modules/rv_bounce_effect/Memo.rv_bounce_effect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rv_drag_to_reorder/Memo.rv_drag_to_reorder.iml" filepath="$PROJECT_DIR$/.idea/modules/rv_drag_to_reorder/Memo.rv_drag_to_reorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rv_motion_layout/Memo.rv_motion_layout.iml" filepath="$PROJECT_DIR$/.idea/modules/rv_motion_layout/Memo.rv_motion_layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rv_restoring_scroll_position/Memo.rv_restoring_scroll_position.iml" filepath="$PROJECT_DIR$/.idea/modules/rv_restoring_scroll_position/Memo.rv_restoring_scroll_position.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/timer/Memo.timer.iml" filepath="$PROJECT_DIR$/.idea/modules/timer/Memo.timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/touchevent/Memo.touchevent.iml" filepath="$PROJECT_DIR$/.idea/modules/touchevent/Memo.touchevent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vp2_sample/Memo.vp2_sample.iml" filepath="$PROJECT_DIR$/.idea/modules/vp2_sample/Memo.vp2_sample.iml" />
+    </modules>
+  </component>
+</project>
