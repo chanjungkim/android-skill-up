@@ -23,6 +23,11 @@ import androidx.room.Query
 /**
  * Data access object to query the database.
  */
+/**
+ * Unfortunately, because LogDao is an interface, we cannot annotate its constructor with @Inject
+ * because interfaces don't have constructors.
+ * How can we tell Hilt how to provide instances of this type?
+ */
 @Dao
 interface LogDao {
 

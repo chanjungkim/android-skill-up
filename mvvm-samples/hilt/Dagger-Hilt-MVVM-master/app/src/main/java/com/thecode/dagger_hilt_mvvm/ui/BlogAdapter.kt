@@ -15,7 +15,6 @@ import com.thecode.dagger_hilt_mvvm.model.Blog
 import kotlinx.android.synthetic.main.item_blog.view.*
 
 class BlogAdapter(private val listener: BlogItemListener) : RecyclerView.Adapter<BlogViewHolder>() {
-
     interface BlogItemListener {
         fun onClickedBlog(blogTitle: CharSequence)
     }

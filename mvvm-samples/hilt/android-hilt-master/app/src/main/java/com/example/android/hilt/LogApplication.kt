@@ -17,7 +17,12 @@
 package com.example.android.hilt
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
+/**
+ * @HiltAndroidApp triggers Hilt's code generation.
+ */
+@HiltAndroidApp
 class LogApplication : Application() {
 
     lateinit var serviceLocator: ServiceLocator
